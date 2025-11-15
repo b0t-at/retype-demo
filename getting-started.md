@@ -12,10 +12,10 @@ Welcome! This guide will help you get up and running with Retype quickly.
 
 ### Prerequisites
 
-Before installing Retype, ensure you have:
+Before installing Retype, ensure you have one of the following:
 
-- [Node.js](https://nodejs.org/) (version 14 or higher)
-- npm or yarn package manager
+- [Node.js](https://nodejs.org/) (version 14 or higher) with npm or yarn
+- [.NET](https://dotnet.microsoft.com/download/dotnet-core) CLI
 
 ### Install Retype
 
@@ -29,6 +29,12 @@ Or using yarn:
 
 ```bash
 yarn global add retypeapp
+```
+
+Or using the dotnet CLI:
+
+```bash
+dotnet tool install retypeapp --global
 ```
 
 Verify the installation:
