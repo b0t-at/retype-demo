@@ -1,5 +1,6 @@
 # Retype build output
 .retype/
+retype.manifest
 
 # Node modules
 node_modules/
