@@ -1,0 +1,21 @@
+input: .
+output: .retype
+
+branding:
+  title: Retype Demo
+  label: v1.0
+
+links:
+  - text: Getting Started
+    link: /getting-started/
+  - text: Components
+    link: /components-demo/
+  - text: GitHub
+    icon: mark-github
+    link: https://github.com/b0t-at/retype-demo
+
+footer:
+  copyright: "&copy; Copyright {{ year }}. [Retype Demo](https://retype.com)"
+
+meta:
+  title: " - Retype Demo"
