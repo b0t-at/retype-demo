@@ -118,7 +118,7 @@ Property | Description
 Run the local development server:
 
 ```bash
-retype watch
+retype start
 ```
 
 This command:
@@ -201,7 +201,7 @@ Port 5000 is already in use
 ```
 **Solution**: Stop other processes using port 5000 or specify a different port:
 ```bash
-retype watch --port 5001
+retype start --port 5001
 ```
 
 ---

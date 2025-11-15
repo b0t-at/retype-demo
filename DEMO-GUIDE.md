@@ -37,7 +37,7 @@ npm install retypeapp --global
 Navigate to this directory and start the development server:
 
 ```bash
-retype watch
+retype start
 ```
 
 Visit `http://localhost:5000` to see the demo site.

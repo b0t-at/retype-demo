@@ -148,7 +148,7 @@ Yes! Configure your hosting platform (GitHub Pages, Netlify, etc.) to use your c
 
 +++ How do I preview my site locally?
 ```bash
-retype watch
+retype start
 ```
 This starts a development server at `http://localhost:5000` with live reload.
 +++
@@ -156,7 +156,7 @@ This starts a development server at `http://localhost:5000` with live reload.
 +++ Can I change the port for the development server?
 Yes:
 ```bash
-retype watch --port 5001
+retype start --port 5001
 ```
 +++
 
@@ -165,7 +165,7 @@ Retype is extremely fast. Most sites build in seconds, even with hundreds of pag
 +++
 
 +++ Does Retype support hot reload?
-Yes! When using `retype watch`, changes to your files are automatically reflected in your browser.
+Yes! When using `retype start`, changes to your files are automatically reflected in your browser.
 +++
 
 ## Deployment
@@ -274,7 +274,7 @@ Ensure:
 Try:
 - Hard refresh (Ctrl+F5 or Cmd+Shift+R)
 - Clear browser cache
-- Restart `retype watch`
+- Restart `retype start`
 +++
 
 +++ How do I debug issues?
