@@ -22,29 +22,38 @@ Retype is a modern static site generator that transforms your Markdown files int
 - :mag: **Built-in search** - Powerful full-text search functionality
 - :sparkles: **Rich components** - Alerts, tabs, panels, and more
 
-## Quick Start
+## Quick start
 
-Get started with Retype in just a few steps:
+You can install Retype using `npm`, `yarn`, or the `dotnet` CLI.
 
-1. Install Retype
-   ```bash
-   npm install retypeapp --global
-   ```
+From your command line, navigate to a folder location where you have one or more Markdown (.md) files, such as a GitHub project.
 
-2. Initialize your project
-   ```bash
-   retype init
-   ```
+Next, choose one of the following tools to first install `retypeapp` and then start Retype by using the `retype start` command:
 
-3. Start the local server
-   ```bash
-   retype watch
-   ```
++++ NPM
+```
+npm install retypeapp --global
+retype start
+```
++++ Yarn
+```
+yarn global add retypeapp
+retype start
+```
++++ dotnet
+```
+dotnet tool install retypeapp --global
+retype start
+```
++++
 
-4. Build for production
-   ```bash
-   retype build
-   ```
+That's it! Your new Retype website should be up and running.
+
+!!!
+You will require either [npm](https://www.npmjs.com/get-npm), [Yarn](https://classic.yarnpkg.com/en/docs/install/), or the [dotnet](https://dotnet.microsoft.com/download/dotnet-core) CLI to be installed before installing Retype. Only one of those three is required, although all three could be installed on your machine too. It's up to you. :raised_hands:
+
+All operating systems are supported, including Mac, Windows, and Linux.
+!!!
 
 ## Explore the Demo
 

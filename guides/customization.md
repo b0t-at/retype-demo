@@ -411,7 +411,7 @@ integrations:
 
 !!! Success Customization Tips
 1. **Start simple** - Begin with basic branding
-2. **Test changes** - Use `retype watch` to see changes live
+2. **Test changes** - Use `retype start` to see changes live
 3. **Be consistent** - Maintain consistent styling
 4. **Optimize images** - Keep logos and images small
 5. **Use variables** - Centralize repeated values

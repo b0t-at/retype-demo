@@ -1,7 +1,7 @@
 ---
 label: FAQ
 icon: question
-order: 600
+order: -1000
 ---
 
 # Frequently Asked Questions
@@ -14,8 +14,18 @@ Common questions and answers about Retype.
 Retype is an ultra-high-performance static site generator that builds a website based on simple Markdown (.md) text files. It allows you to focus on your writing while it automatically builds a beautiful, fast, and functional website.
 +++
 
-+++ Is Retype free?
-Yes! Retype is free and open source. You can use it for personal projects, documentation, blogs, and commercial projects.
++++ Is Retype free to use?
+Yes, Retype is free to use with both open-source and commercial projects up to 100 pages per project.
+
+With [Retype Pro](https://retype.com/pro/), you get the following additional features:
+
+1. No page limit
+2. The `Powered by Retype` branding can be removed
+3. Password protected private and protected pages
+4. Outbound link configuration
+5. Breadcrumb navigation
+6. Hub link
+7. Table of Contents configuration
 +++
 
 +++ What makes Retype different from other static site generators?
@@ -39,9 +49,25 @@ No! If you can write Markdown, you can use Retype. Basic knowledge of YAML for c
 +++
 
 +++ How do I install Retype?
-```bash
-npm install retypeapp --global
+You can install Retype using `npm`, `yarn`, or the `dotnet` CLI:
+
++++ npm
 ```
+npm install retypeapp --global
+retype start
+```
++++ yarn
+```
+yarn global add retypeapp
+retype start
+```
++++ dotnet
+```
+dotnet tool install retypeapp --global
+retype start
+```
++++
+
 See the [Getting Started](/getting-started/) guide for detailed instructions.
 +++
 
@@ -122,7 +148,7 @@ Yes! Configure your hosting platform (GitHub Pages, Netlify, etc.) to use your c
 
 +++ How do I preview my site locally?
 ```bash
-retype watch
+retype start
 ```
 This starts a development server at `http://localhost:5000` with live reload.
 +++
@@ -130,7 +156,7 @@ This starts a development server at `http://localhost:5000` with live reload.
 +++ Can I change the port for the development server?
 Yes:
 ```bash
-retype watch --port 5001
+retype start --port 5001
 ```
 +++
 
@@ -139,7 +165,7 @@ Retype is extremely fast. Most sites build in seconds, even with hundreds of pag
 +++
 
 +++ Does Retype support hot reload?
-Yes! When using `retype watch`, changes to your files are automatically reflected in your browser.
+Yes! When using `retype start`, changes to your files are automatically reflected in your browser.
 +++
 
 ## Deployment
@@ -248,7 +274,7 @@ Ensure:
 Try:
 - Hard refresh (Ctrl+F5 or Cmd+Shift+R)
 - Clear browser cache
-- Restart `retype watch`
+- Restart `retype start`
 +++
 
 +++ How do I debug issues?

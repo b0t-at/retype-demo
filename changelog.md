@@ -6,7 +6,11 @@ order: 500
 
 # Changelog
 
-All notable changes to this demo project.
+All notable changes to this **Retype Demo** project.
+
+!!!
+This changelog tracks changes to this demo repository. For the official Retype product changelog and release notes, visit the [Retype Changelog](https://retype.com/changelog/).
+!!!
 
 ## Version 1.0.0 (2023-12-20)
 

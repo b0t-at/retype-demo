@@ -12,10 +12,10 @@ Welcome! This guide will help you get up and running with Retype quickly.
 
 ### Prerequisites
 
-Before installing Retype, ensure you have:
+Before installing Retype, ensure you have one of the following:
 
-- [Node.js](https://nodejs.org/) (version 14 or higher)
-- npm or yarn package manager
+- [Node.js](https://nodejs.org/) (version 14 or higher) with npm or yarn
+- [.NET](https://dotnet.microsoft.com/download/dotnet-core) CLI
 
 ### Install Retype
 
@@ -29,6 +29,12 @@ Or using yarn:
 
 ```bash
 yarn global add retypeapp
+```
+
+Or using the dotnet CLI:
+
+```bash
+dotnet tool install retypeapp --global
 ```
 
 Verify the installation:
@@ -112,7 +118,7 @@ Property | Description
 Run the local development server:
 
 ```bash
-retype watch
+retype start
 ```
 
 This command:
@@ -195,7 +201,7 @@ Port 5000 is already in use
 ```
 **Solution**: Stop other processes using port 5000 or specify a different port:
 ```bash
-retype watch --port 5001
+retype start --port 5001
 ```
 
 ---
