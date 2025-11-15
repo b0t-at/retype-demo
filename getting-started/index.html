@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816544661769">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816546452509">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,12 +30,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=3.11.0.816544661769" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.11.0.816546452509" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.816544661769" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.816546452509" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.816544661769" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.11.0.816544661769" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.816546452509" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.11.0.816546452509" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -209,10 +209,10 @@
         <span>Prerequisites</span>
     </h3>
 </doc-anchor-target>
-<p>Before installing Retype, ensure you have:</p>
+<p>Before installing Retype, ensure you have one of the following:</p>
 <ul>
-<li><a href="https://nodejs.org/">Node.js</a> (version 14 or higher)</li>
-<li>npm or yarn package manager</li>
+<li><a href="https://nodejs.org/">Node.js</a> (version 14 or higher) with npm or yarn</li>
+<li><a href="https://dotnet.microsoft.com/download/dotnet-core">.NET</a> CLI</li>
 </ul>
 <doc-anchor-target id="install-retype">
     <h3>
@@ -227,6 +227,10 @@
 <p>Or using yarn:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre translate="no" class="language-bash"><code v-pre class="language-bash">yarn global add retypeapp</code></pre>
+</doc-codeblock></div>
+<p>Or using the dotnet CLI:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">dotnet tool install retypeapp --global</code></pre>
 </doc-codeblock></div>
 <p>Verify the installation:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -349,7 +353,7 @@ order: 100
 </doc-anchor-target>
 <p>Run the local development server:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">retype watch</code></pre>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">retype start</code></pre>
 </doc-codeblock></div>
 <p>This command:</p>
 <ul>
@@ -498,7 +502,7 @@ footer:
 </doc-codeblock></div>
 <p><strong>Solution</strong>: Stop other processes using port 5000 or specify a different port:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">retype watch --port 5001</code></pre>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">retype start --port 5001</code></pre>
 </doc-codeblock></div>
 <hr>
 <p><strong>Issue</strong>: Build fails
